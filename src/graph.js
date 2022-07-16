@@ -18,8 +18,8 @@ const options = {
       },
     },
     // grid: {
-    //     drawTicks: false
-    // }
+    //   drawTicks: false,
+    // },
   },
   plugins: {
     zoom: {
@@ -37,8 +37,8 @@ const options = {
         mode: 'xy',
       },
       limits: {
-        x: { min: 1262353464000, max: Date.now(), minRange: 50 },
-        y: { min: 0, max: 5000, minRange: 50 },
+        x: { min: Date(2018, 11, 24), max: Date.now(), minRange: 86400000 },
+        y: { min: 0, max: 3000, minRange: 50 },
       },
     },
   },
@@ -50,7 +50,7 @@ const RatingGraph = ({ datasets, progress }) => {
     return (
       <div className='rating'>
         <h2>
-          Fetching rating changes {progress.done}/{progress.total}
+          Wait Crow {progress.done}/{progress.total}
         </h2>
       </div>
     )
@@ -67,8 +67,8 @@ const RatingGraph = ({ datasets, progress }) => {
         data={data}
         options={options}
         plugins={[Zoom]}
-        width={700}
-        height={500}
+        width={800}
+        height={600}
       />
     </div>
   )

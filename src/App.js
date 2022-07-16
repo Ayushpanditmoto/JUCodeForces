@@ -30,7 +30,7 @@ const UsersForm = ({ submitAct }) => {
 
 const App = () => {
   useEffect(() => {
-    document.title = 'cf plot'
+    document.title = 'JU CodeForces'
   }, [])
 
   const [handles, setHandles] = useState('')
