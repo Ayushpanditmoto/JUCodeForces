@@ -30,7 +30,7 @@ const fetch_retry = async (url, n) => {
 
 export const getUserData = (handles, setUsers) => {
   setUsers([])
-  // let handlesForURL = handles.replaceAll('\n', ';')
+  let UserJU = handles.replaceAll('\n', ';')
   for (var i = 0; i < UserJU.length; i++) {
     fetch(URL_INFO + UserJU[i])
       .then((response) => {

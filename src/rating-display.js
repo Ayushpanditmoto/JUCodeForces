@@ -1,14 +1,15 @@
-import { ratingToColor } from './utils';
-import React from 'react';
+import { ratingToColor } from './utils'
+import React from 'react'
 
-export const RatingDisplay = ({ users }) => { // component that displays the current ratings
+export const RatingDisplay = ({ users }) => {
+  // component that displays the current ratings
   return (
     <ul className='rating' id='rating-display'>
       {users.map((user) => (
-        <li key={user.handle}>
-        <h3 className={ratingToColor(user.rating)}>
-          {user.handle} {user.rating}
-        </h3>
+        <li key={user.id}>
+          <h3 className={ratingToColor(user.rating)}>
+            {user.User} {user.rating}
+          </h3>
         </li>
       ))}
     </ul>
