@@ -1,0 +1,83 @@
+:root {
+  --nord-bg: #eceff4;
+  --nord-dark-white: #d8dee9;
+}
+.user-legendary {
+ color:red!important
+}
+.user-legendary::first-letter {
+ color:#000!important
+}
+.legendary-user-first-letter {
+ color:#000!important
+}
+.user-red {
+ color:red!important
+}
+.user-fire {
+ color:red!important
+}
+.user-yellow {
+ color:#bb0!important
+}
+.user-violet {
+ color:#a0a!important
+}
+.user-orange {
+ color:#ff8c00!important
+}
+.user-blue {
+ color:blue!important
+}
+.user-cyan {
+ color:#03a89e!important
+}
+.user-green {
+ color:green!important
+}
+.user-gray {
+ color:gray!important
+}
+.user-black {
+ color:#000!important;
+ font-weight:400!important
+}
+
+.rating {
+  float:left; 
+  padding: 20px;
+}
+
+#rating-display {
+  height: 70vh;
+  overflow-y: auto;
+  scrollbar-color: var(--nord-dark-white) var(--nord-bg);
+}
+/* #rating-display:hover { */
+/* }                       */
+
+.form {
+  padding: 20px;
+  margin:auto;
+  display: flex;
+	justify-content:center;
+}
+
+.input {
+  border: 0;
+  background-color: var(--nord-bg);
+	margin: .4rem;
+	width: 10em;
+	font-size: 1.5em;
+}
+
+.input-div {
+  border: 1px solid #333;
+	border-radius: 1em;
+}
+
+body {
+  background-color: var(--nord-bg);
+  display: flex;
+	justify-content:center;
+}
