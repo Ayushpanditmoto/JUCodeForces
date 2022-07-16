@@ -16,6 +16,9 @@ const UserJU = [
   'twoplusthree',
   'WillSee',
   'CP_Arijeet',
+  'arkajyoti2708',
+  'umanghalok',
+  'Soham_Chaudhuri',
 ]
 
 const fetch_retry = async (url, n) => {
