@@ -49,10 +49,10 @@
 }
 
 #rating-display {
-  display: none;
-  /* height: 70vh;
+  /* display: none; */
+  height: 70vh;
   overflow-y: auto;
-  scrollbar-color: var(--nord-dark-white) var(--nord-bg); */
+  scrollbar-color: var(--nord-dark-white) var(--nord-bg);
 }
 /* #rating-display:hover { */
 /* }                       */

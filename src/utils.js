@@ -57,9 +57,8 @@ export const getUserData = (handles, setUsers) => {
 export const getRatings = async (handlesStr, setDatasets, setProgress) => {
   let ratings = []
   let invalidHandles = []
-  const handles = handlesStr.split('\n')
   setDatasets([])
-  setProgress({ done: 0, total: handles.length })
+  setProgress({ done: 0, total: UserJU.length })
   let cnt = 0
   for (var i = 0; i < UserJU.length; i++) {
     await fetch_retry(URL_rating + UserJU[i], 10).then(
